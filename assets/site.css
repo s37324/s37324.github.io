@@ -1,0 +1,113 @@
+:root {
+  --ink: #1c2420;
+  --muted: #48544c;
+  --paper: #f7f8f5;
+  --card: #ffffff;
+  --line: #d8ddd6;
+  --accent: #2f6b4f;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+a {
+  color: var(--accent);
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+header.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+}
+
+header.app-bar a {
+  text-decoration: none;
+}
+
+header.app-bar .brand {
+  color: var(--muted);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 1.75rem;
+}
+
+.meta, .lede, p, li {
+  color: var(--ink);
+}
+
+.meta, .lede {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.lede {
+  margin: 0 0 2rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+.cards {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cards a {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards a:hover {
+  border-color: var(--accent);
+}
+
+.cards strong {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.cards span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
